@@ -16,7 +16,7 @@ import InfoContainer from './containers/InfoContainer'
 export default class App extends Component {
   render () {
     return (
-      <Router>
+      <Router basename="/rhythm/dev/ghz-web">
         <div>
           <Pane display='flex' paddingY={12} borderBottom>
             <Pane flex={1} alignItems='center' display='flex' marginLeft={8}>

@@ -53,7 +53,7 @@ func New(db *database.Database, appInfo *api.ApplicationInfo, conf *config.Confi
 
 	// API
 
-	apiRoot := s.Group("/api")
+	apiRoot := s.Group("/rhythm/dev/ghz-web/api")
 
 	// Projects
 
