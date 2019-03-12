@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bojand/ghz/internal"
-	"github.com/bojand/ghz/internal/helloworld"
+	"github.com/lukaasp/ghz/internal"
+	"github.com/lukaasp/ghz/internal/helloworld"
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/assert"
 )

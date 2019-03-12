@@ -142,7 +142,7 @@ export default class ProjectList extends Component {
                   {p.id}
                 </Table.TextCell>
                 <Table.TextCell maxWidth={260} textProps={{ size: 400 }}>
-                  <RouterLink to={`/projects/${p.id}`}>
+                  <RouterLink to={`/rhythm/dev/ghz-web/projects/${p.id}`}>
                     {p.name}
                   </RouterLink>
                 </Table.TextCell>

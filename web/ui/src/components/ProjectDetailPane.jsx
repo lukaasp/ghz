@@ -39,7 +39,7 @@ class ProjectDetailPane extends Component {
     const ok = await this.props.projectStore.deleteProject(id)
     if (ok) {
       toaster.success(`Project ${name} deleted.`)
-      this.props.history.push(`/projects`)
+      this.props.history.push(`/rhythm/dev/ghz-web/projects`)
     }
   }
 

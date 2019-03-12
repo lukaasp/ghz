@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/bojand/ghz/web/api"
-	"github.com/bojand/ghz/web/config"
-	"github.com/bojand/ghz/web/database"
+	"github.com/lukaasp/ghz/web/api"
+	"github.com/lukaasp/ghz/web/config"
+	"github.com/lukaasp/ghz/web/database"
 	"github.com/rakyll/statik/fs"
 
 	"github.com/go-playground/validator"
@@ -19,7 +19,7 @@ import (
 	"github.com/labstack/gommon/log"
 
 	// for bundled resources
-	_ "github.com/bojand/ghz/web/router/statik"
+	_ "github.com/lukaasp/ghz/web/router/statik"
 )
 
 // New creates new server
@@ -121,10 +121,10 @@ func New(db *database.Database, appInfo *api.ApplicationInfo, conf *config.Confi
 	wrapHandler := echo.WrapHandler(assetHandler)
 
 	// our custom handler
-	s.GET("/*", func(ctx echo.Context) error {
+	s.GET("/rhythm/dev/ghz-web/*", func(ctx echo.Context) error {
 		// if root just pass through to the fs handler
 		path := ctx.Request().URL.Path
-		if path == "/" {
+		if path == "/rhythm/dev/ghz-web" {
 			return wrapHandler(ctx)
 		}
 

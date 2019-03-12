@@ -51,7 +51,7 @@ class ReportDetailPane extends Component {
     const ok = await this.props.reportStore.deleteReport(id)
     if (ok) {
       toaster.success(`Report ${name} deleted.`)
-      this.props.history.push(`/projects`)
+      this.props.history.push(`/rhythm/dev/ghz-web/projects`)
     }
   }
 

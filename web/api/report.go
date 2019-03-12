@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bojand/ghz/web/model"
+	"github.com/lukaasp/ghz/web/model"
 	"github.com/labstack/echo"
 )
 

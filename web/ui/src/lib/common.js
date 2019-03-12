@@ -88,11 +88,7 @@ function toLocaleString (date) {
 }
 
 function getAppRoot () {
-  if (process.env.NODE_ENV !== 'production') {
-    return 'http://localhost:3000'
-  }
-
-  return ''
+  return '/rhythm/dev/ghz-web'
 }
 
 module.exports = {

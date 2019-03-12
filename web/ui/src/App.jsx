@@ -16,22 +16,22 @@ import InfoContainer from './containers/InfoContainer'
 export default class App extends Component {
   render () {
     return (
-      <Router basename="/rhythm/dev/ghz-web">
+      <Router>
         <div>
           <Pane display='flex' paddingY={12} borderBottom>
             <Pane flex={1} alignItems='center' display='flex' marginLeft={8}>
-              <TabLink to='/projects' linkText='PROJECTS' icon='control' />
-              <TabLink to='/reports' linkText='REPORTS' icon='dashboard' />
+              <TabLink to='/rhythm/dev/ghz-web/projects' linkText='PROJECTS' icon='control' />
+              <TabLink to='/rhythm/dev/ghz-web/reports' linkText='REPORTS' icon='dashboard' />
             </Pane>
           </Pane>
           <Switch>
-            <Route exact path='/' component={Projects} />
-            <Route path='/projects/:projectId' component={Projects} />
-            <Route path='/projects' component={Projects} />
-            <Route path='/reports/:reportId' component={Reports} />
-            <Route path='/compare/:reportId1/:reportId2' component={Compare} />
-            <Route path='/reports' component={Reports} />
-            <Route path='/about' component={Info} />
+            <Route exact path='/rhythm/dev/ghz-web' component={Projects} />
+            <Route path='/rhythm/dev/ghz-web/projects/:projectId' component={Projects} />
+            <Route path='/rhythm/dev/ghz-web/projects' component={Projects} />
+            <Route path='/rhythm/dev/ghz-web/reports/:reportId' component={Reports} />
+            <Route path='/rhythm/dev/ghz-web/compare/:reportId1/:reportId2' component={Compare} />
+            <Route path='/rhythm/dev/ghz-web/reports' component={Reports} />
+            <Route path='/rhythm/dev/ghz-web/about' component={Info} />
           </Switch>
           <Footer />
         </div>
